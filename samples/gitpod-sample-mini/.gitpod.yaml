@@ -1,0 +1,23 @@
+# from https://githubmemory.com/repo/gitpod-io/gitpod/issues/5892
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Terminal 1
+    init: npm install
+    command: hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0
+
+ports:
+  - port: 1313
+    onOpen: open-browser
+
+vscode:
+  extensions:
+    - asciidoctor.asciidoctor-vscode@2.8.4
+    - budparr.language-hugo-vscode@1.2.0
+    - dendron.dendron-markdown-preview-enhanced@0.10.11
+    - robole.markdown-snippets@0.6.0
+    - GrapeCity.gc-excelviewer@2.1.35
+    - aaron-bond.better-comments@2.1.0
+    - dendron.dendron-paste-image
