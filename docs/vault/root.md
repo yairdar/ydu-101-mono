@@ -2,7 +2,7 @@
 id: 0nMAtWUU1p6d5jTfI9kPE
 title: Root
 desc: ''
-updated: 1639940781749
+updated: 1639941153159
 created: 1639940592150
 ---
 # Welcome to Dendron
@@ -19,5 +19,11 @@ This section contains useful links to related resources.
 - [Github](https://link.dendron.so/6b24)
 - [Developer Docs](https://docs.dendron.so/)
 
-- [[ydu.lang.java.field.yaml.md]]
-- ![[ydu.lang.java.field.yaml#references,1]]
+## Reference Samples
+
+- ![[ydu.field.ide.tool.vscode#dev-container-development,1]]
+
+- ![[ydu.field.ide.tool.vscode]]
+
+- [[ydu.field.ide.tool.vscode#dev-container-development]]
+
