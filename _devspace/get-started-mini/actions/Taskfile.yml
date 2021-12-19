@@ -1,0 +1,32 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  init-repo-root-with-tasker:
+    desc: "Creates a Taskfile.yml in the root of repo"
+    vars:
+      target_path: ../../Taskfile.yml
+    preconditions:
+      - msg: "Taskfile.yml aready exists, integrate not yet supported"
+        sh: "[[ ! -f {{.target_path}} ]]"
+    cmds:
+      - |-
+        cat << EQF > {{.target_path}}
+        # https://taskfile.dev
+
+        version: "3"
+        tasks:
+          default:
+            silent: true
+            cmds:
+            - task -l
+        EQF
