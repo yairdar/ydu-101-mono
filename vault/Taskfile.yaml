@@ -22,16 +22,11 @@ tasks:
     pwd
     ls ../.next || npx dendron publish init
 
-  build-site-cmd: |-
-    npx dendron publish build
-    npx dendron publish export
-
-  build-site:
-    desc: build dendron html static site
-    deps:
-      - task: resolve-deps
+  build-site-cmd:
     cmds:
-      - task: build-site-cmd
+      - cmd: |-
+          npx dendron publish build
+          npx dendron publish export
     sources:
       - ./*.md
       - ./*.yaml
@@ -40,6 +35,14 @@ tasks:
     generates:
       - ../.next/out/**/*.html
       - ../.next/out/**/*.png
+
+  build-site:
+    desc: build dendron html static site
+    deps:
+      - task: resolve-deps
+    cmds:
+      - task: build-site-cmd
+
 
   serve-site: |
     pushd ../.next/out

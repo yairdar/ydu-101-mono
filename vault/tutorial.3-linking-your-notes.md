@@ -2,7 +2,7 @@
 id: hAB2tQHsi0CGuhxz5HkTI
 title: Linking Your Notes
 desc: Note Linking and your Knowledge Graph
-updated: 1645422538789
+updated: 1645423150872
 created: 1624333278136
 ---
 
@@ -24,7 +24,6 @@ Take a look at the backlinks panel on the bottom left section of your sidebar. T
 
 ![Backlinks](https://org-dendron-public-assets.s3.amazonaws.com/images/tutorial-backlinks.png)
 
-![WebServer](/assets/diagrams/web-server-structure.drawio.png)
 ### Explore Your Knowledge Graph
 
 > 🌱 To get a visual representation of your notes, use the `Dendron: Show Note Graph` command.
