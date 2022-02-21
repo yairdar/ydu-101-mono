@@ -14,11 +14,15 @@ tasks:
       - task -l
     silent: true
 
-  setup-tools: |
+  setup-tools: |-
+    cd ..
     which npx || npm install -g npx yarn
-    which dendron-cli || npm install @dendronhq/dendron-cli@latest
+    which dendron-cli ||  bash -c ' \
+      npm init -y \
+      && npm install @dendronhq/dendron-cli@latest \
+      '
 
-  resolve-deps: |
+  resolve-deps: |-
     pwd
     ls ../.next || npx dendron publish init
 
