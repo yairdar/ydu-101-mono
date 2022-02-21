@@ -57,6 +57,8 @@ sequenceDiagram
 
 ### Note References
 
+- Note References - Add a section from another note with its content inlined into the current note. [References Docs](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c.html#note-reference)
+
 You can link to a specific section of a different note and have the content in-lined into the current note.
 
 ![[tutorial#welcome-to-dendron:#*]]
