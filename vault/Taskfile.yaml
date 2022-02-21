@@ -11,6 +11,7 @@ tasks:
     cmds:
       - echo "{{.GREETING}}"
       - task -a
+      - task -l
     silent: true
 
   setup-tools: |
@@ -18,8 +19,20 @@ tasks:
     which dendron-cli || npm install @dendronhq/dendron-cli@latest
 
   resolve-deps: |
-    test -d .next || npx dendron publish init
+    test -d ../.next || npx dendron publish init
 
-  build: |
+  build-site-cmd: |-
     npx dendron publish build
     npx dendron publish export
+
+  build-site:
+    desc: build dendron html static site
+    deps:
+      - task: resolve-deps
+    cmds:
+      - task: build-site-cmd
+
+  serve-site: |
+    pushd ../.next/out
+      python -m http.server 17333
+    popd

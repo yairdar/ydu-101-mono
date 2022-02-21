@@ -24,4 +24,4 @@ tasks:
     deps:
       - task: resolve-deps
     cmds:
-      - task -t vault build
+      - task -t vault build-site
