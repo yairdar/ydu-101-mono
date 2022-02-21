@@ -32,6 +32,14 @@ tasks:
       - task: resolve-deps
     cmds:
       - task: build-site-cmd
+    sources:
+      - ./*.md
+      - ./*.yaml
+      - ./*.yml
+      - ./*.png
+    generates:
+      - ../.next/out/**/*.html
+      - ../.next/out/**/*.png
 
   serve-site: |
     pushd ../.next/out

@@ -8,5 +8,10 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggest.showSnippets": true,
     "editor.tabCompletion": "on",
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#103414",
+        "titleBar.activeBackground": "#17491D",
+        "titleBar.activeForeground": "#F5FCF6"
+    }
 }
