@@ -24,4 +24,12 @@ tasks:
     deps:
       - task: resolve-deps
     cmds:
-      - task -d vault build-site
+      - task -d vault build-site {{.watch}}
+
+    
+  watch-build:
+    desc: build all
+    deps:
+      - task: resolve-deps
+    cmds:
+      - task -d vault build-site-cmd --watch
