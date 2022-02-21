@@ -19,7 +19,7 @@ tasks:
     which dendron-cli || npm install @dendronhq/dendron-cli@latest
 
   resolve-deps: |
-    test -d ../.next || npx dendron publish init
+    ls ../.next || npx dendron publish init
 
   build-site-cmd: |-
     npx dendron publish build
