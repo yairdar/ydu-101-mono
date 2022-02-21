@@ -2,7 +2,7 @@
 id: SHke5esexXOL93PPtnkvW
 title: 1 Intro
 desc: ''
-updated: 1645429526325
+updated: 1645429626489
 created: 1645418882958
 ---
 
@@ -34,7 +34,3 @@ p1 | p2 | p3
 a | b | c
 d | e | f
 
-## TODO
-
-- [ ] keep extentions of dendron and vscode
-- [ ] use to describe architecture
