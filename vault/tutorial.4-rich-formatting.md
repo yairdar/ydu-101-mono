@@ -2,7 +2,7 @@
 id: vAy0awBTwDaxKGHWUdSaP
 title: Rich Formatting
 desc: "Text Formatting, Images, Formulas, and Diagrams"
-updated: 1624865905667
+updated: 1645417256040
 created: 1624352425213
 ---
 
@@ -64,6 +64,8 @@ You can link to a specific section of a different note and have the content in-l
 ![[tutorial#welcome-to-dendron:#*]]
 
 [References Docs](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c.html#note-reference)
+
+![[recipes#my-best-cocail:#*]]
 
 ### Next Steps
 
