@@ -17,12 +17,7 @@
     "editor.snippetSuggestions": "inline",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggest.showSnippets": true,
-    "editor.tabCompletion": "on",
-    "workbench.colorCustomizations": {
-      "activityBar.background": "#053339",
-      "titleBar.activeBackground": "#07474F",
-      "titleBar.activeForeground": "#F2FDFE"
-    }
+    "editor.tabCompletion": "on"
   },
   "extensions": {
     "recommendations": [
