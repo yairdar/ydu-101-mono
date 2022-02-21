@@ -6,17 +6,11 @@
 
 > https://www.gitpod.io/#https://github.com/yairdar/ydu-101-mono
 
-## Setup New Dev station
+## Get Started New Dev Session
 
-```shell
-# @act=set kind=current.working.dir dir=_devspace/get-started-mini
-cd _devspace/get-started-mini
+- > Install env tools: `task -d devpod install-all`
 
-# @act=anounce kind=install.stage desc='minimal os tools'
-./task.ensure-base-os-tools.sh install-all
+- > Build html: `task build`
 
-# @act=declare kind=install.stage desc='developer env settings'
-./task.ensure-base-dev-space.sh.yml install-all
-```
 
 

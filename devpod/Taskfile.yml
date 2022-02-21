@@ -18,14 +18,21 @@ tasks:
     silent: true
 
   install-base-tools: |-
-    # install base tools
+    echo "install base tools"
     bash setup.os.tools.sh install-all
+  
   install-mid-tools: |-
-    # install base tools
-    task -t setup.zsh.tools.yml install-all
+    if [ "$(uname)" == "Darwin" ]; then
+      # Do something under Mac OS X platform
+    elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+      # Do something under GNU/Linux platform
+      echo "install base tools"
+      task -t setup.zsh.tools.yml install-all
+    fi
+
   install-prj-tools: |-
-    # install base tools
-    echo "[WIP] Please install dendron manually from"
+    echo "install project tools tools"
+    task -d .. setup-tools
 
   install-all-tasks:
     - task: install-base-tools
