@@ -2,7 +2,7 @@
 id: rjIdJ1mYtQFSShqKhSFsg
 title: Recipes
 desc: ''
-updated: 1645429629322
+updated: 1645429900665
 created: 1645397485002
 ---
 
@@ -26,7 +26,7 @@ import os
 os.system("ls")
 ```
 
-## TODO
+## TODO It
 
 - [ ] keep extentions of dendron and vscode
 - [ ] use to describe architecture
