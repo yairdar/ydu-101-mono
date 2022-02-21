@@ -2,7 +2,7 @@
 id: SHke5esexXOL93PPtnkvW
 title: 1 Intro
 desc: ''
-updated: 1645426368035
+updated: 1645429526325
 created: 1645418882958
 ---
 
@@ -22,3 +22,19 @@ graph LR;
     C-->D;
     D-.->_O_(over);
 ```
+
+```python
+print(121)
+```
+
+## Table sample
+
+p1 | p2 | p3
+---|----|---
+a | b | c
+d | e | f
+
+## TODO
+
+- [ ] keep extentions of dendron and vscode
+- [ ] use to describe architecture
