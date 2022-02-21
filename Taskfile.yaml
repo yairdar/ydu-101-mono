@@ -14,14 +14,14 @@ tasks:
     silent: true
 
   setup-tools: |
-    task -t vault {{.TASK}}
+    task -d vault {{.TASK}}
 
   resolve-deps: |
-    task -t vault {{.TASK}}
+    task -d vault {{.TASK}}
 
   build:
     desc: build all
     deps:
       - task: resolve-deps
     cmds:
-      - task -t vault build-site
+      - task -d vault build-site
