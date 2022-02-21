@@ -1,0 +1,25 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: |-
+    Usage: task {setup-toos,resolve-deps,build}
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+      - task -a
+    silent: true
+
+  setup-tools: |
+    which npx || npm install -g npx yarn
+    which dendron-cli || npm install @dendronhq/dendron-cli@latest
+
+  resolve-deps: |
+    test -d .next || npx dendron publish init
+
+  build: |
+    npx dendron publish build
+    npx dendron publish export

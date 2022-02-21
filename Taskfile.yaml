@@ -1,0 +1,27 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: |-
+    Usage: task {setup-toos,resolve-deps,build}
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+      - task -a
+    silent: true
+
+  setup-tools: |
+    task -t vault {{.TASK}}
+
+  resolve-deps: |
+    task -t vault {{.TASK}}
+
+  build:
+    desc: build all
+    deps:
+      - task: resolve-deps
+    cmds:
+      - task -t vault build

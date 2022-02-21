@@ -2,6 +2,9 @@
   "folders": [
     {
       "path": "vault"
+    },
+    {
+      "path": "."
     }
   ],
   "settings": {
@@ -14,12 +17,7 @@
     "editor.snippetSuggestions": "inline",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggest.showSnippets": true,
-    "editor.tabCompletion": "on",
-    "workbench.colorCustomizations": {
-      "activityBar.background": "#302F07",
-      "titleBar.activeBackground": "#43410A",
-      "titleBar.activeForeground": "#FBFBE6"
-    }
+    "editor.tabCompletion": "on"
   },
   "extensions": {
     "recommendations": [
