@@ -19,12 +19,17 @@ tasks:
   resolve-deps: |
     task -d vault {{.TASK}}
 
+  clean: |
+    task -d vault {{.TASK}}
+
   build:
     desc: build all
     deps:
       - task: resolve-deps
     cmds:
       - task -d vault build-site {{.watch}}
+      
+
 
     
   watch-build:
@@ -33,3 +38,8 @@ tasks:
       - task: resolve-deps
     cmds:
       - task -d vault build-site-cmd --watch
+      
+  serve-build:
+    desc: expose as http
+    cmds:
+    - task -d vault serve-site

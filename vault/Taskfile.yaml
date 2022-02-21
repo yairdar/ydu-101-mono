@@ -24,7 +24,11 @@ tasks:
 
   resolve-deps: |-
     pwd
+
     ls ../.next || npx dendron publish init
+  
+  clean: |-
+    rm -rf ../.next/out
 
   build-site-cmd:
     cmds:
